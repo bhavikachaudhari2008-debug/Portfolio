@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+    <style>
+      *{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+      }
+        .demo{
+            background-color: rgb(198, 149, 123);    
+        }
+        .image img{
+
+             height:500px ;
+        }
+        .image h3,h2,p{
+          color:black;
+        }
+        .image24{
+          margin-bottom: 80px;
+        }
+        
+         .demo1{
+             display: flex;
+             justify-content: space-evenly; 
+            padding: 20px;
+            margin-right: 500px;
+            margin-top: 30px;
+            margin-bottom: 80px;
+            
+          }
+          
+           .skills{
+             display: flex;
+             justify-content: space-evenly;
+              margin-top: 30px;
+            margin-bottom: 80px;
+          
+             
+          }
+          .image1{
+             
+            border: 0px solid rgb(248, 244, 244);
+            height: 250px;
+            width: 200px;
+            background-color: white;
+            box-shadow: 2px 2px 0px 0px grey;
+            transition: transform 1s linear;
+          }
+          .image1:hover{
+
+              transform: scale(0.5);
+          }
+          .P1{
+            width: 100%;
+            height: 8px;
+            background-color: gray;
+            border-radius: 10px;
+
+          }
+          .C1{
+             width: 90%;
+             height: 100%;
+             background-color: orangered;
+             border: 10px;
+          }
+          .C2{
+             width: 85%;
+             height: 100%;
+             background-color: skyblue;
+             border: 10px;
+          }
+          .C3{
+             width: 75%;
+             height: 100%;
+             background-color:green;
+             border: 10px;
+          }
+          .C4{
+             width: 80%;
+             height: 100%;
+             background-color: darkblue;
+             border: 10px;
+          }
+          .C5{
+             width: 70%;
+             height: 100%;
+             background-color: rgb(69, 107, 195);
+             border: 10px;
+          }
+          .projects{
+            display: flex;
+             justify-content: space-evenly;
+              margin-top: 30px;
+            margin-bottom: 80px;
+             
+          }
+          .port{
+             border: 1px solid white;
+            height: 380px;
+            width: 300px;
+            margin-right: 200px;
+            background-color: whitesmoke;
+            transition: transform 1s linear ,background-color 1s linear ;
+             animation:gocard 3s linear;
+             animation-iteration-count: infinite;
+             animation-direction:alternate-reverse;
+          }
+            @keyframes gocard{
+
+            0%{
+                transform:translateX(0px);
+            }
+            50%{
+                background-color:rgb(204, 145, 155);
+            }
+            75%{
+                background-color: rgb(180, 167, 173);
+            }
+            100%{
+                background-color:rgb(209, 219, 223);
+                transform: translate(200px);
+            }
+        }
+
+          .port:hover{
+             box-shadow: 2px 2px 5px 5px gray;
+             transform: scale(1.5);
+             background-color: pink;
+          }
+          .port button{
+            background-color:  rgb(202, 94, 135);
+             color: aliceblue;
+             height: 30px;
+             width: 100px;
+          }
+          .Education{
+            display: flex;
+            justify-content: space-evenly;
+             margin-top: 30px;
+            margin-bottom: 80px;
+          
+          }
+          .education1{
+                 border: 1px solid white;   
+                 height: 350px; 
+                 width: 300px;
+                 margin-right: 200px;
+                background-color: rgb(250, 246, 246);
+                box-shadow: 1px 1px 1px 1px grey;     
+                transition: transform 2s linear ,background-color 1s linear;
+                animation:movecard 3s linear;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                
+          }
+          @keyframes movecard{
+            0%{
+                transform:translateX(0px);
+            }
+            50%{
+                 background-color:rgb(204, 145, 155);
+            }
+            75%{
+                background-color: rgb(196, 169, 180);
+            }
+            100%{
+                background-color:rgb(164, 196, 209);
+                transform: translate(200px);
+            }
+          }
+          .education1:hover{  
+            transform: scale(0.5);
+           box-shadow: 2px 2px 5px 5px gray;
+            background-color:pink;
+          }
+          
+         .education1 img{
+            height: 150px;
+               
+         }
+         .education1 h4{
+           color: black;
+         }
+          .con{
+            display: flex;
+            justify-content: space-evenly;
+             margin-top: 30px;
+            margin-bottom: 80px;
+           
+          }
+          .convo button{
+            background-color: palevioletred;
+            color: aliceblue;
+            width: 200px;
+            height: 40px;
+            margin-top: 30px;
+          }
+          .foot{
+             display: flex;
+             color: aliceblue;
+             background-color: black;
+             justify-content: space-around;
+             margin-top: 60px;
+          }
+          .con input:focus{
+             background-color: pink;
+          }
+         .color{
+          background-color:aliceblue;
+         }
+         .button2 {
+          display: flex;
+          justify-content: space-evenly;
+         }
+         .footer h6{
+          display: flex;
+          justify-content: space-evenly;
+           background-color: rgb(198, 149, 123); 
+          color: rgb(10, 10, 10);
+          margin-top: 30px;
+          padding: 20px;
+         }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid demo">
+    <a class="navbar-brand" href="#"><h3>Bhavika</h3></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+     </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="portfolio.html">HOME</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="skills.html"> SKILLS</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="myprojects.html">PROJECTS</a>
+        </li>
+         <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="education.html">EDUCATION</a>
+        </li>
+         <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="contact me.html">CONTACT</a>
+        </li>
+
+
+           <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+    
+    </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="color">
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner image24">
+    <div class="carousel-item active image" data-bs-interval="2000ms">
+      <img src="tech2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+<div class="image">
+        <h3> HI,I'M</h3>
+        <h2>BHAVIKA CHAUDHARI</h2>
+        <h3>FRONTEND DEVELOPER</h3>
+        <p> I build beautiful,responsive and user-friendly website using HTML,CSS and JavaScript.</p>
+        <div class="button">
+        <button id="button1">Download</button>
+        <button id="btn">Hire Me</button>
+        </div>      
+    </div>
+      </div>
+    </div>
+        
+        <div class="carousel-item active image" data-bs-interval="2000ms">
+         <img src="tech3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+           <div class="image">
+        <h3> HI,I'M</h3>
+        <h2>BHAVIKA CHAUDHARI</h2>
+        <h3>FRONTEND DEVELOPER</h3>
+        <p> I build beautiful,responsive and user-friendly website using HTML,CSS and JavaScript.</p>
+           <div class="button">
+        <button id="button1">Download</button>
+        <button id="btn">Hire Me</button>
+        </div>      
+    </div>
+      </div>
+
+    </div>
+    
+    
+      <div class="carousel-item active" data-bs-interval="2000ms">
+      <img src="tech6.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="image">
+        <h3> HI,I'M</h3>
+        <h2>BHAVIKA CHAUDHARI</h2>
+        <h3>FRONTEND DEVELOPER</h3>
+        <p> I build beautiful,responsive and user-friendly website using HTML,CSS and JavaScript.</p>
+        <div class="button">
+        <button id="button1">Download</button>
+        <button id="btn">Hire Me</button>
+        </div>      
+    </div>
+      </div>
+  
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<h1 align="center">ABOUT ME</h1>
+    <div class="demo1">
+    <img src="noprofile.jpg" align="left" height="350px" width="350">
+
+    <div class="demo2">
+    
+    <h3 >Hello! I'am Bhavika Chaudhari</h3>
+    <p> I am a passionate Frontend Developer who loves create <br>beautiful and functional websites.I enjoy turning ideas into<br> reality through code. </p>
+    <h5>Name: Bhavika chaudhari <h5>
+    <h5>Email: bhavikachaudhari2008@gmail.com</h5>
+    <h5>From: Nashik,Maharashtra</h5>
+    <h5>Freelance: Availabel</h5>
+    </div>
+    </div>
+
+    <h2 align="center">MY SKILLS</h2>
+
+    
+    <div class="skills">
+
+       <div class="card image1" style="width: 13rem;">
+            <img src="myhtml.jpg" height="200px" width="200px">
+            <div class="P1">
+                <div class="C1">
+
+                </div>
+            </div>
+        </div>
+
+       <div class="card image1" style="width: 13rem;">
+            <img src="mycss.jpg" height="200px" width="200px">
+            <div class="P1">
+                <div class="C2">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="card image1" style="width: 13rem;">
+            <img src="myjavascrept.jpg" height="200px" width="200px">
+            <div class="P1">
+                <div class="C3">
+                    
+                </div>
+            </div>
+        </div>
+
+     <div class="card image1" style="width: 13rem;">
+            <img src="bootstrap.jpg" height="200px" width="200px">
+            <div class="P1">
+                <div class="C4">
+                    
+                </div>
+            </div>
+        </div>
+
+       <div class="card image1" style="width: 13rem;">
+            <img src="java.jpg" height="200px" width="200px">
+            <div class="P1">
+                <div class="C5">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   </div> 
+    
+   <h2 align="center"> MY PROJECTS</h2>
+    <div class="projects">
+<div class="card port" style="width: 20rem;">
+  <img src="plaptop.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Portfolio Website</h5>
+    <p class="card-text">A personal portfolio website using HTML & CSS.</p>
+    <a href="#" class="btn btn-secondary">View Here</a>
+  </div>
+</div>
+
+       <div class="card port" style="width: 20rem;">
+  <img src="ecommerce2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">E-commerce Website</h5>
+    <p class="card-text">A responsive e-commerce website design.</p>
+    <a href="#" class="btn btn-secondary">View Here</a>
+  </div>
+</div>
+
+        <div class="card port" style="width: 20rem;">
+  <img src="dashbord.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Dashboard Design</h5>
+    <p class="card-text">A modern dashboard UI design.</p>
+    <a href="#" class="btn btn-secondary">View Here</a>
+  </div>
+</div>     
+    </div>
+
+    <h2 align="center">EDUCATION</h2>
+
+       <div class="Education">
+
+        <div class="card education1" style="width: 20rem;">
+  <img src="convocation.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Diploma</h4>
+    <p class="card-text">Computer Science</p>
+    <p class="card-text">R.C.Patel Polytechnic,Shirpur</p>
+    <p class="card-text">2024-27</p>
+  </div>
+</div>
+
+       <div class="card education1" style="width: 20rem;">
+  <img src="convocation.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Bachelor's Degree</h4>
+    <p class="card-text">B.sc(Information Technology)</p>
+    <p class="card-text">..............</p>
+    <p class="card-text">2027-30</p>
+  </div>
+</div>
+
+        <div class="card education1" style="width: 20rem;">
+  <img src="convocation.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Master's Degree</h4>
+    <p class="card-text">M.Sc(Computer Science)</p>
+    <p class="card-text">..............</p>
+    <p class="card-text">2030-32</p>
+  </div>
+</div>
+
+       
+
+    </div>
+
+    <h2  class="card-title"align="center">CONTACT ME </h2>
+    <div class="con">
+    <table class="table table-striped table-bordered">
+    <tbody>
+    <tr>   
+          <td><input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Your Name"></td>
+          <td rowspan="2"><textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea></td>
+  </tr>
+<tr>
+          <td><input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your E-mail"></td>
+  </tr>
+
+  </tbody>
+</table>
+</div>
+
+<div class="button2">
+  <button type="button" class="btn btn-secondary">Send Message</button>
+</div>
+
+<div class="footer">
+  <h6>@26portfolio</h6>
+</div>
+
+ </div> 
+
+
+</body>
+</html>
