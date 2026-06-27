@@ -101,12 +101,10 @@
              border: 1px solid white;
             height: 380px;
             width: 300px;
-            margin-right: 200px;
             background-color: whitesmoke;
-            transition: transform 1s linear ,background-color 1s linear ;
-             animation:gocard 3s linear;
-             animation-iteration-count: infinite;
-             animation-direction:alternate-reverse;
+            transition: transform 2s linear ,background-color 1s linear ;
+             animation:gocard 3s linear  infinite alternate-reverse;
+             
           }
             @keyframes gocard{
 
@@ -121,13 +119,13 @@
             }
             100%{
                 background-color:rgb(209, 219, 223);
-                transform: translate(200px);
+               
             }
         }
 
           .port:hover{
              box-shadow: 2px 2px 5px 5px gray;
-             transform: scale(1.5);
+             transform: scale(1.1);
              background-color: pink;
           }
           .port button{
@@ -147,13 +145,11 @@
                  border: 1px solid white;   
                  height: 350px; 
                  width: 300px;
-                 margin-right: 200px;
                 background-color: rgb(250, 246, 246);
                 box-shadow: 1px 1px 1px 1px grey;     
                 transition: transform 2s linear ,background-color 1s linear;
-                animation:movecard 3s linear;
-                animation-iteration-count: infinite;
-                animation-direction: alternate;
+                animation:movecard 2s linear infinite alternate-reverse;
+               
                 
           }
           @keyframes movecard{
@@ -168,11 +164,11 @@
             }
             100%{
                 background-color:rgb(164, 196, 209);
-                transform: translate(200px);
+                
             }
           }
           .education1:hover{  
-            transform: scale(0.5);
+            transform: scale(1.1);
            box-shadow: 2px 2px 5px 5px gray;
             background-color:pink;
           }
