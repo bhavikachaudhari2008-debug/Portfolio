@@ -19,12 +19,23 @@
         .card1{
              
           box-shadow: 1px 1px 1px 1px bisque;
-          transition: transform 2s linear;
+          animation:gocard 3s linear  infinite alternate-reverse;
         }
-        .card1:hover{
-           
-          transform: translateY(50px);
-        
+       
+        @keyframes gocard {
+          0%{
+             transform: translateY(0px); 
+          }
+          50%{
+            background-color: antiquewhite;
+          }
+          75%{
+            background-color: rgb(209, 171, 122);
+          }
+           100%{
+            background-color: rgb(186, 174, 158);
+          }
+          
         }
         .button2 {
           display: flex;
